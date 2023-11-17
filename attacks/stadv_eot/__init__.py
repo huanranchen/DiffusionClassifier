@@ -1,0 +1,1 @@
+from .attacks import StAdvAttack
