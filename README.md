@@ -42,9 +42,19 @@ Put it into ./resources/checkpoints/models/WideResNet_70_16_dropout.pt
 
 
 ---
+## Usage
 
+### Demos
 
-## Experiments
+We provide some demos in the root. We believe it's very clear and you will know how to use DC/RDC/LM after playing with the example code. Hence, we didn't add more explanation in this README.
+
+**LM.py**: Likelihood Maximization with WRN-70-2.
+
+**DCTK.py**: Diffusion Classifier on CIFAR10.
+
+**RDCN+TK.py**: Robust Diffusion Classifier on CIFAR10.
+
+### Experiments
 
 All experiments codes are in *'./experiments/'*.
 
