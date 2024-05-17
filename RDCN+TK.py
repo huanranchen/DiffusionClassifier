@@ -1,7 +1,7 @@
 import torch
 from models.unets import get_edm_cifar_uncond, get_edm_cifar_cond
 from data import get_CIFAR10_test
-from tester import test_acc
+from tester import test_acc, test_apgd_dlr_acc
 import argparse
 from defenses.PurificationDefenses.DiffPure import EDMEulerIntegralDC, EDMEulerIntegralLM, \
     diffusion_likelihood_maximizer_defense
@@ -35,3 +35,4 @@ rdc = diffusion_likelihood_maximizer_defense(
 )
 
 test_acc(rdc, test_loader)
+test_apgd_dlr_acc(rdc, loader=test_loader)

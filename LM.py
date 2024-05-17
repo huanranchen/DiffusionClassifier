@@ -2,7 +2,7 @@ import torch
 from models.unets import get_edm_cifar_uncond, get_edm_cifar_cond
 from models import WideResNet_70_16_dropout
 from data import get_CIFAR10_test
-from tester import test_acc
+from tester import test_acc, test_apgd_dlr_acc
 import argparse
 from defenses.PurificationDefenses.DiffPure import EDMEulerIntegralDC, EDMEulerIntegralLM, \
     diffusion_likelihood_maximizer_defense
@@ -31,3 +31,4 @@ lm_wrn = diffusion_likelihood_maximizer_defense(
 )
 
 test_acc(lm_wrn, test_loader)
+test_apgd_dlr_acc(lm_wrn, loader=test_loader)

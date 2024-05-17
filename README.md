@@ -4,40 +4,33 @@
 
 ## Install
 
-Please refer to:    [**BasicReadMe**](https://github.com/huanranchen/AdversarialAttack/blob/main/README.md)
+Please refer to:    [**BasicReadMe**](https://github.com/huanranchen/DiffusionClassifier/blob/main/Intro.md)
 
-### Model Checkpoints
+
+--- 
+## Model Checkpoints
+
+
+### VP Diffusion implementation (not recommended)
 
 
 There are two version of our implementation. One is based on VP-SDE proposed by Song et al. (2021). This version is not recommended, and has been depreciated. For this, you need to download:
 
-**CIFAR10 unconditional diffusion model for DiffPure**:      
-https://drive.google.com/file/d/1zfblaZd64Aye-FMpus85U5PLrpWKusO4/view            
-Put it into ./resources/checkpoints/DiffPure/32x32_diffusion.pth
+- [CIFAR10 unconditional diffusion model for DiffPure](https://drive.google.com/file/d/1zfblaZd64Aye-FMpus85U5PLrpWKusO4/view). Put it into ./resources/checkpoints/DiffPure/32x32_diffusion.pth
 
-**CIFAR10 WideResNet-70-16-dropout~(discriminative classifier used in DiffPure)**:        
-https://github.com/NVlabs/DiffPure, "Data and pre-trained models" part.       
-Put it into ./resources/checkpoints/models/WideResNet_70_16_dropout.pt
+- [CIFAR10 WideResNet-70-16-dropout](https://drive.google.com/drive/folders/1mQoH6WbnfItphYKehWVniZmq9iixRn8L?usp=sharing)(discriminative classifier used in DiffPure). Put it into ./resources/checkpoints/models/WideResNet_70_16_dropout.pt
 
-**Conditional diffusion model for diffusion classifier**           
-We will share our checkpoints soon. Now you can train it by yourself.      
+- Conditional diffusion model for diffusion classifier: We will share our checkpoints soon. Now you can train it by yourself.      
 
-**ImageNet unconditional diffusion model for DiffPure**:      
-https://drive.google.com/file/d/1zfblaZd64Aye-FMpus85U5PLrpWKusO4/view               
-Put it into ./resources/checkpoints/DiffPure/256x256_diffusion_uncond.pt
+- [ImageNet unconditional diffusion model for DiffPure](https://drive.google.com/file/d/1zfblaZd64Aye-FMpus85U5PLrpWKusO4/view). Put it into ./resources/checkpoints/DiffPure/256x256_diffusion_uncond.pt
 
 
+### VE Diffusion implementation (not recommended)
 
 Another is based on Karras et al. (2022), a.k.a. EDM. We strongly recommend you to use this implementation. For this, you need to download:
 
-EDM checkpoints: https://drive.google.com/drive/folders/1mQoH6WbnfItphYKehWVniZmq9iixRn8L?usp=sharing
-
-Put it into ./resources/checkpoints/models/EDM/
-
-
-**CIFAR10 WideResNet-70-16-dropout~(discriminative classifier used in DiffPure)**:        
-https://github.com/NVlabs/DiffPure, "Data and pre-trained models" part.       
-Put it into ./resources/checkpoints/models/WideResNet_70_16_dropout.pt
+- [EDM checkpoints](https://drive.google.com/drive/folders/1mQoH6WbnfItphYKehWVniZmq9iixRn8L?usp=sharing). Put it into ./resources/checkpoints/models/EDM/               
+- [CIFAR10 WideResNet-70-16-dropout](https://drive.google.com/drive/folders/1mQoH6WbnfItphYKehWVniZmq9iixRn8L?usp=sharing)(discriminative classifier used in DiffPure). Put it into ./resources/checkpoints/models/WideResNet_70_16_dropout.pt
 
 
 
