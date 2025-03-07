@@ -22,7 +22,7 @@ There are two version of our implementation. One is based on VP-SDE proposed by 
 
 - Conditional diffusion model for diffusion classifier: We will share our checkpoints soon. Now you can train it by yourself.      
 
-- [ImageNet unconditional diffusion model for DiffPure](https://drive.google.com/file/d/1zfblaZd64Aye-FMpus85U5PLrpWKusO4/view). Put it into ./resources/checkpoints/DiffPure/256x256_diffusion_uncond.pt
+- [ImageNet unconditional diffusion model for DiffPure](https://drive.google.com/file/d/1ZCWNdxL9siBhGKSJDXSwl89ncvwOjIQO/view?usp=drive_link). Put it into ./resources/checkpoints/DiffPure/256x256_diffusion_uncond.pt
 
 
 ### VE Diffusion implementation (not recommended)
